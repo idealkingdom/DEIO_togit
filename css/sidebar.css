@@ -1,0 +1,19 @@
+.sidebar{
+	height: calc(100%);
+	width: 150px;
+	margin-top: 1px;
+	overflow: auto;
+}
+
+x-accordion main{
+	margin-left: 4%;
+}
+
+x-accordion main:hover{
+	background: lightgray;
+	transition: 0.5s;
+}
+
+x-label{
+	color: black;
+}

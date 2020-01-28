@@ -1,0 +1,98 @@
+body,body *{
+	font-size: 13px !important;
+	overflow: hidden;
+}
+#mcontainer{
+	position: absolute;
+	height: calc(100% - 32px);
+	width: 100%;
+}
+.mainArea{
+margin-top: 1px;
+height: calc(100%);
+overflow: auto;
+}
+
+#cmirror{
+	height: 100%;
+	background-color: ghostwhite;
+}
+
+
+#tableContext{
+  display: flex;
+  position: fixed;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+
+
+table{
+	    border-spacing: 0;
+    width: 100%;
+    border: 0;
+    border-collapse: separate;
+    font-size: 12px;
+    text-align: left;
+}
+
+table tr{
+	    cursor: default;
+}
+
+.table-striped tr:nth-child(even) {
+  background-color: #f5f5f4;
+}
+
+tr:active,
+.table-striped tr:active:nth-child(even) {
+  color: #fff;
+  background-color: #116cd6;
+}
+
+thead tr:active {
+  color: #333;
+  background-color: #f5f5f4;
+}
+
+th {
+  font-weight: normal;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 2px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+th:last-child,
+td:last-child {
+  border-right: 0;
+}
+
+
+thead th{
+	position: sticky;
+	top: 0;
+}
+
+
+dialog#openfile{
+    top: 100px;
+    width: 150px;
+    min-height: 50px;
+    height: 80px;
+    text-align: center;
+    padding: 5px;
+}
+
+#loadfileokbutton x-label{
+    color: blue;
+}
+#cancelfilebutton x-label{
+    color: red;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "deio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^7.1.10",
+    "normalize.css": "^8.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "xel": "0.0.214"
+  }
+}

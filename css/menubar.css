@@ -1,0 +1,7 @@
+x-menuitem{
+	-webkit-app-region: no-drag;
+}
+
+x-menubar{
+	height: 30px !important;
+}
