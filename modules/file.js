@@ -2,6 +2,8 @@ const axios = require('axios')
 const Path = require('path')  
 const fs = require('fs')
 
+
+
 async function downloadF(link,filename) {
 		const path = Path.resolve(__dirname, 'Files', filename)
 		response = await axios.get(`http://survey-d.dynata.com/api/v1/surveys/selfserve/${link}/files/${filename}`,{
@@ -10,7 +12,7 @@ async function downloadF(link,filename) {
 				  responseType: 'blob'
 				
 			})
-		getdl = await function(e) {
+		var getdl = await function(e) {
 		  const url = window.URL.createObjectURL(new Blob([e],{ type: 'application/octet-stream;'}));
   		  const link1 = document.createElement('a');
   		  link1.href = url;
@@ -19,7 +21,7 @@ async function downloadF(link,filename) {
   		  link1.click();
 		};
 
-		getdl(response.data)
+		return getdl(response.data)
 }
 
 async function getFiles(link){
@@ -29,8 +31,7 @@ async function getFiles(link){
 				          'responseType': 'stream'
 				}
 			})
-	console.log(response.data)
-
+	return response;
 }
 
-downloadF('53b/1909631','survey.xml')
+
